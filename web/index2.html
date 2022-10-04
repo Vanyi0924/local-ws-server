@@ -1,0 +1,12 @@
+<h1>
+  ws
+  <button onclick="send()">send</button>
+</h1>
+
+<script>
+  const ws = new WebSocket("ws://127.0.0.1:9025")
+
+  function send() {
+    ws.send("hi");
+  }
+</script>
